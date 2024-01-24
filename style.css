@@ -1,19 +1,12 @@
 .holder {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    width: 400px;
+    border: solid 4px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 13px;
 }
 
-/* 
-1-red
-2-sky blue
-3-violet
-4-green
-5-yellow
-
-1) 1,5
-2) 3,2,4
-*/
 .item {
     display: flex;
     justify-content: center;
@@ -24,28 +17,32 @@
 
 .item:nth-child(1) {
     background-color: red;
+    flex-grow: 2;
     width: 200px;
     order: -2;
+    border-top-left-radius: 10px;
 }
 
 .item:nth-child(5) {
     background-color: yellow;
+    flex-grow: 2;
     width: 200px;
     order: -2;
+    border-top-right-radius: 10px;
 }
 
 .item:nth-child(3) {
     background-color: purple;
-    width: 133px;
+    flex-grow: 1.5;
     order: -1;
 }
 
 .item:nth-child(2) {
     background-color: skyblue;
-    width: 133px;
+    flex-grow: 1.5;
 }
 
 .item:nth-child(4) {
     background-color: green;
-    width: 133px;
+    flex-grow: 1.5;
 }
